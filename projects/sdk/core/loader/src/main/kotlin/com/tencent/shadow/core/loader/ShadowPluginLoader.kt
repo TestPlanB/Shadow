@@ -212,6 +212,6 @@ abstract class ShadowPluginLoader(hostAppContext: Context) : DelegateProvider, D
     }
 
     private fun isUiThread(): Boolean {
-        return Thread.currentThread() == Looper.getMainLooper().thread
+        return Thread.currentThread() === Looper.getMainLooper().thread
     }
 }

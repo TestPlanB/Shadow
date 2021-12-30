@@ -205,7 +205,7 @@ internal class DynamicPluginLoader(hostContext: Context, uuid: String) {
 
     private fun isUiThread(): Boolean {
 
-        return Thread.currentThread() == Looper.getMainLooper().thread
+        return Thread.currentThread() === Looper.getMainLooper().thread
     }
 
     /**
