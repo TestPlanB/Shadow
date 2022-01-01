@@ -55,7 +55,6 @@ class PluginServiceManager(mPluginLoader: ShadowPluginLoader, mHostContext: Cont
                 countDownLatch.countDown()
             }
             countDownLatch.await()
-            @Suppress("UNCHECKED_CAST")
             return result[0] as T
         }
     }
