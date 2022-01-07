@@ -115,7 +115,7 @@ private open class UnsafePluginServiceManager(
     }
 
 
-    fun startPluginService(intent: Intent): ComponentName? {
+    fun startPluginService(intent: Intent): ComponentName {
         val componentName = intent.component!!
 
 
